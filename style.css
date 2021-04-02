@@ -1,0 +1,117 @@
+:root {
+    background-color: #ecf5ff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+span {
+    font-size: 15px;
+    justify-content: center;
+    margin-left:  30%;
+    margin-right: 30%;
+    line-height: 20px;
+}
+
+nav {
+    padding-top: 25px;
+    margin-right: 50px;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 25px;
+    padding-left: 100px;
+}
+
+.container, #homepage {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+ 
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rebeccapurple;
+    transition: transform 150ms;
+}
+#start-button, #submit-initials {
+    padding: 5px;
+    background-color: rgb(172, 138, 205);
+    margin-top: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+.hide-over {
+    display: none;
+}
+
+#user-score {
+    color:  rgb(61, 23, 99);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.submit-box {
+    display: none;
+}
+
+input {
+    font-size: 18px;
+}
+
+.button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.multiple-choice {
+    display: flex;  
+    margin-bottom: 3px;
+    width: 100%;
+    font-size: 16px;
+    background-color: rgb(61, 23, 99);
+    color: white;
+}
+
+.multiple-choice:hover {
+    cursor: pointer;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.choice-number, .choice-text {
+    padding-left: 10px;
+}
