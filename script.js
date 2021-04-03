@@ -74,18 +74,20 @@ function startTime() {
 // hide homepage instruction and start button and show the questions area
 function startQuiz() {
     hasQuizStarted = true;
-    startMenuEl.setAttribute("class", "hide");
-    questionArrayEl.setAttribute("class", "show");
+    startMenuEl.setAttribute("class", "hidden");
+    questionArrayEl.setAttribute("class", "visible");
     startQuestion();
 }
 //updating title with current questions from array and then clearing out any old choices from prior questions.
 function startQuestion() {
+    feedbackEl.textContent='';
     questionsEl.textContent = question[quizIndex].title;
     choicesEl.innerHTML = '';
     //looping each question, creating a button and adding a click event listener for each choice and display on page.
     for (var i = 0; i < question[quizIndex].choices.length; i++) {
         var button = document.createElement("button");
         button.textContent = question[quizIndex].choices[i];
+        button.setAttribute("class", "choices-button")
         button.onclick = checkAnswer;
         choicesEl.append(button)
     }
@@ -94,18 +96,18 @@ function startQuestion() {
 function checkAnswer () {
 
     // check if user guessed wrong
-    if (this.value !== questions[quizIndex].answer) {
+    if (this.value !== question[quizIndex].answer) {
       // subtract time
-      time -= 10;
+      timerLeft -= 10;
    
-      if (time < 0) {
-        time = 0;
+      if (timerLeft < 0) {
+        timerLeft = 0;
       }
   
       // display new time on page
-      timerEl.textContent = timer;
+      timerEl.textContent = timerLeft;
   
-  
+      
       feedbackEl.textContent = "Wrong!";
     } else {
 
@@ -122,11 +124,14 @@ function checkAnswer () {
     quizIndex++;
   
     // check if we've run out of questions
-    if (quizIndex === questions.length) {
+    if (quizIndex === question.length) {
       endQuiz();
       getInitials()
     } else {
-      startQuestion();
+        setTimeout(function() {
+            startQuestion();     
+        }, 1000);
+      
     }                      
   }
 

@@ -73,12 +73,15 @@ li {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
-.choices {
+.visible {
     display: block;
-    margin-top: 10px;
+}
+
+.choices-button {
+    margin-bottom: 5px;
 }
 
 #user-score {
@@ -97,9 +100,11 @@ input {
 }
 
 #choices {
-    display: block;  
+    display: flex;  
     margin-bottom: 3px;
-    width: 200%;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
     font-size: 16px;
     background-color: rgb(61, 23, 99);
     color: white;
