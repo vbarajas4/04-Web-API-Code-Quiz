@@ -167,7 +167,7 @@ scoresHtml =‘<div class=“highscore”><div class=“initials”>dink</div><d
 
 
 
-  }
+  /*
 
 // function for saving highscore
 function saveHighscore() {
