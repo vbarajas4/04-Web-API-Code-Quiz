@@ -10,8 +10,25 @@ h2 {
     font-weight: 700;
     margin-bottom: 30px;
     text-align: center;
+    
 }
 
-.row {
-    
+body{
+    display: block;
+    padding-top: 80px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+tr {
+    text-align: center;
+}
+
+button {
+    margin-bottom: 10px;
 }
