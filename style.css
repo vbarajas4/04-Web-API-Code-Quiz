@@ -43,6 +43,7 @@ nav {
 ul {
     list-style-type: none;
 }
+
 li {
     display: inline-block;
     margin-right: 25px;
@@ -71,21 +72,19 @@ li {
     margin-top: 40px;
 }
 
-.hide {
+.hidden {
     display: none;
 }
 
-.hide-over {
-    display: none;
+.choices {
+    display: block;
+    margin-top: 10px;
 }
 
 #user-score {
     color:  rgb(61, 23, 99);
     margin-bottom: 10px;
     text-align: center;
-}
-.submit-box {
-    display: none;
 }
 
 input {
@@ -97,10 +96,10 @@ input {
     box-shadow: none;
 }
 
-.multiple-choice {
+/*.multiple-choice {
     display: flex;  
     margin-bottom: 3px;
-    width: 100%;
+    width: 200%;
     font-size: 16px;
     background-color: rgb(61, 23, 99);
     color: white;
@@ -114,4 +113,21 @@ input {
 
 .choice-number, .choice-text {
     padding-left: 10px;
+}*/
+
+#game-over {
+    text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+    ul {
+      display: inline-flex;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    li {
+      font-size: 15px;
+      padding-left: 50px;
+    }
 }

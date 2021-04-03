@@ -11,14 +11,14 @@
     <nav>
         <ul>
             <li>
-              <div class="highscore" id="highscore">View Higscore</div>
+              <a href="highscores.html" class="highscores">View Highscore</a>
             </li>
             <li>
               <div class="timer" id="timer">Timer:</div>
             </li>
-
         </ul>
     </nav>
+
     <main class="container">
         <section class="start-menu" id=homepage>
             <h1>Coding Quiz Challenge</h1>
@@ -29,35 +29,25 @@
         </section>
 
         
-        <div class="hide" id="question-array">
+        <div class="hidden" id="question-array">
             
-            <h2 id="questions">whats your name?</h2>
-            <div class="multiple-choice">
-                <p class="choice-number">1</p>
-                <p class="choice-text" data-number="1">Choice 1</p>
-            </div>
-            <div class="multiple-choice">
-                <p class="choice-number">2</p>
-                <p class="choice-text" data-number="2">Choice 2</p>
-            </div>
-            <div class="multiple-choice">
-                <p class="choice-number">3</p>
-                <p class="choice-text" data-number="3">Choice 3</p>
-            </div>
-            <div class="multiple-choice">
-                <p class="choice-number">4</p>
-                <p class="choice-text" data-number="4">Choice 4</p>
-            </div>
+            <h2 id="questions"></h2>
+            <div id="choices"></div>
+            <div id="feedback" class="hide-feedback"></div>
         </div>
-       
-        <div class="hide-over" id="game-over">
+            
+        <div class="hidden" id="quiz-over">
             <h2>All Done!</h2>
-            <h3 id="user-score">30</h3>
-        </div> 
-        <div class="submit-box" id="hide-submit">
-            <input type="text" id="initials">
-            <button class="button" id="submit-initials">Submit</button>
+            <span id="YourScore">Your score is</span> 
+            <span id="message">Enter your initials below!</span>
+       
+              <input type="text" id="initials">
+              <button class="button" id="submit-initials">Submit</button>         
         </div>
+
+       <!--<div class=hidden id=“highscores”></div>
+        <div id=“quiz”></div>-->
+        
         <script src="script.js"></script>
 
     </main>
