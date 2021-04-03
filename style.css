@@ -96,8 +96,8 @@ input {
     box-shadow: none;
 }
 
-/*.multiple-choice {
-    display: flex;  
+#choices {
+    display: block;  
     margin-bottom: 3px;
     width: 200%;
     font-size: 16px;
@@ -105,15 +105,12 @@ input {
     color: white;
 }
 
-.multiple-choice:hover {
+#choices:hover {
     cursor: pointer;
     opacity: 0.4;
     transition: 0.5s;
 }
 
-.choice-number, .choice-text {
-    padding-left: 10px;
-}*/
 
 #game-over {
     text-align: center;

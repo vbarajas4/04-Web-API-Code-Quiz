@@ -1,6 +1,6 @@
 //variables from the DOM
 var startMenuEl = document.querySelector("#homepage");
-var questionArrayEl = document.querySelector("#questionArray");
+var questionArrayEl = document.querySelector("#question-array");
 var questionsEl = document.getElementById("questions");
 var choicesEl = document.querySelector("#choices");
 var startButton = document.getElementById("start-button");
@@ -65,7 +65,7 @@ function startTime() {
     timerInterval = setInterval(function() {
         if (timerLeft <= 0) {
             clearInterval(timerInterval);
-            endQuiz();
+            quizEnd();
         }
         timerLeft--;
         timerEl.textContent = "Timer: " + timerLeft;
@@ -87,17 +87,17 @@ function startQuestion() {
         var button = document.createElement("button");
         button.textContent = question[quizIndex].choices[i];
         button.onclick = checkAnswer;
-        choicesEl.appendChild(button)
+        choicesEl.append(button)
     }
 }
 
 function checkAnswer () {
 
     // check if user guessed wrong
-    if (this.textContent !== questions[quizIndex].answer) {
+    if (this.value !== questions[quizIndex].answer) {
       // subtract time
       time -= 10;
-  
+   
       if (time < 0) {
         time = 0;
       }
@@ -136,16 +136,25 @@ function checkAnswer () {
     clearInterval(timerInterval);
   
     // show end screen
-    var highscoreSectionEl = document.querySelector("#highscore-section");
-    highscoreSectionEl.setAttribute("class", "show");
+    var highscoreEl = document.querySelector("#quiz-over");
+    highscoreEl.setAttribute("class", "show");
   
     // show final score
-    var finalScoreEl = document.querySelector("#final-score");
-    finalScoreEl.textContent = time;
+    var scoreEl = document.querySelector("#yourscore");
+    ScoreEl.textContent = time;
   
     // hide questions section
-    quizScreen.setAttribute("class", "hide");
+    questionArrayEl.setAttribute("class", "hide");
   }
+
+
+
+
+
+
+
+
+
 
 
 
