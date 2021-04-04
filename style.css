@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
 }
-
+/*styling the headings of the quiz*/
 h1 {
     font-size: 40px;
     font-weight: 700;
@@ -31,7 +31,7 @@ span {
     margin-right: 30%;
     line-height: 20px;
 }
-
+/*getting the links to center on the nav area*/
 nav {
     padding-top: 25px;
     margin-right: 50px;
@@ -50,7 +50,7 @@ li {
     font-size: 25px;
     padding-left: 100px;
 }
-
+/*styling the appearance of the quiz*/
 .container, #homepage {
     width: 100vw;
     height: 60vh;
@@ -66,6 +66,7 @@ li {
     box-shadow: 0 0.4rem 1.4rem 0 rebeccapurple;
     transition: transform 150ms;
 }
+
 #start-button, #submit-initials {
     padding: 5px;
     background-color: rgb(172, 138, 205);
@@ -124,7 +125,7 @@ input {
 #game-over {
     text-align: center;
 }
-
+/*changing the screen for smaller devices*/
 @media screen and (max-width: 425px) {
     ul {
       display: inline-flex;

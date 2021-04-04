@@ -19,23 +19,25 @@
         </ul>
     </nav>
 
+        <!--displaying main page instructioin to the quiz--> 
     <main class="container">
         <section class="visible" id="homepage">
             <h1>Coding Quiz Challenge</h1>
             <span>Try to answer the following code-related questions 
             within the time limit. Keep in mind the incorrect answers
-            will penalize your score time by 5 seconds!</span>
+            will penalize your score time by 10 seconds!</span>
             <button class="button" id="start-button">Start Quiz</button>
         </section>
 
-        
+        <!--displaying the questions once quiz start button is pressed--> 
         <div class="hidden" id="question-array">
             
             <h2 id="questions"></h2>
             <div id="choices"></div>
             <div id="feedback" class="hidden"></div>
         </div>
-            
+
+       <!--displaying the score and initials once quiz ends-->     
         <div class="hidden" id="quiz-over">
             <h2>All Done!</h2>
             <span id="yourscore">Your score is</span> 
@@ -44,8 +46,6 @@
               <input type="text" id="initials">
               <button class="button" id="submit-initials">Submit</button>         
         </div>
-
-     
         
         <script src="script.js"></script>
 

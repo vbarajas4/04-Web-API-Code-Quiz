@@ -134,7 +134,6 @@ function checkAnswer () {
     }                      
   }
 
-
   // end the quiz 
   function quizEnd() { 
     console.log("quizEnd")
@@ -142,13 +141,13 @@ function checkAnswer () {
     // stop timer
     clearInterval(timerInterval); 
 
+  //show user score
     document.getElementById("yourscore").textContent = "Your score is " + score;
     document.querySelector("#quiz-over").classList.remove("hidden");
-    questionArrayEl.setAttribute("class", "hidden");
-
-    
- 
+    questionArrayEl.setAttribute("class", "hidden"); 
   }
+
+  //saving initials to local storage
   function saveLocalStorage() {
    
     highscoreList.push({"initials": initials, "score": score});

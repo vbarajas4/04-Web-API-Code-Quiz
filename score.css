@@ -13,6 +13,7 @@ h2 {
     
 }
 
+/*centering highscores table*/
 body{
     display: block;
     padding-top: 80px;
@@ -36,3 +37,4 @@ th {
 button {
     margin-bottom: 10px;
     margin-top: 10px;
+}
