@@ -29,6 +29,10 @@ tr {
     text-align: center;
 }
 
-button {
+th {
     margin-bottom: 10px;
 }
+
+button {
+    margin-bottom: 10px;
+    margin-top: 10px;

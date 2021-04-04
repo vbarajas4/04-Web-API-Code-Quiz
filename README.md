@@ -1,90 +1,66 @@
 # 04 Web APIs: Code Quiz
 [github live page](https://vbarajas4.github.io/04-Web-API-Code-Quiz/.)
 
-## Your Task
-
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
-
-To help familiarize you with these tests and allow you to use the skills covered in this unit, this week’s homework invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
-
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
 
 ## User Story
 
-```
 AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
-```
 
-## Acceptance Criteria
+## Project Outline
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-```
+We were asked to build a timed quiz in which it would challenge our understanding in Web API.
+The application contains a start button that starts a timed quiz, in which it delivers a number of 
+questions. For each question you get correct, you get a point. For every question you get wrong, 
+you get 10 seconds deducted from your total time left. Once the array of questions comes to an end, 
+the quiz ends and it then gives your total score and gives you an input to put your initials to 
+submit. Your score is then saved to the Local Storage in your computer browser and prints it in a 
+highscore list.
 
-## Mock-Up
+## Screenshot of my Live Github Page
 
-The following animation demonstrates the application functionality:
+Code Quiz Homepage
+<img width="708" alt="code quiz homepage" src="https://user-images.githubusercontent.com/79430431/113497101-44407b00-94b5-11eb-8c01-330cd0810626.png">
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+Code Quiz Question
+<img width="762" alt="code quiz question" src="https://user-images.githubusercontent.com/79430431/113497113-6639fd80-94b5-11eb-85ea-a747d6d78705.png">
 
-## Grading Requirements
+Code Quiz Score and Initials
+<img width="647" alt="code quiz score initials" src="https://user-images.githubusercontent.com/79430431/113497131-98e3f600-94b5-11eb-9e36-c08b46788d2f.png">
 
-This homework is graded based on the following criteria: 
+Code Quiz Highscores
+<img width="580" alt="code quiz highscores" src="https://user-images.githubusercontent.com/79430431/113497142-c2048680-94b5-11eb-8ccc-206e12ab746c.png">
 
-### Technical Acceptance Criteria: 40%
+## Important Links 
 
-* Satisfies all of the preceding acceptance criteria.
+GitHub Repository Link
+https://github.com/vbarajas4/04-Web-API-Code-Quiz
 
-### Deployment: 32%
+Link to GitHub deployed Webpage 
+https://vbarajas4.github.io/04-Web-API-Code-Quiz/
 
-* Application deployed at live URL.
 
-* Application loads with no errors.
+## License
 
-* Application GitHub URL submitted.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-* GitHub repository contains application code.
+<font size="2">Copyright (c) 2021 Vanessa Maldonado</font>
 
-### Application Quality: 15%
+<font size="1">Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-* Application user experience is intuitive and easy to navigate.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</font> 
