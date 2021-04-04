@@ -23,15 +23,19 @@ highscore list.
 ## Screenshot of my Live Github Page
 
 Code Quiz Homepage
+
 <img width="708" alt="code quiz homepage" src="https://user-images.githubusercontent.com/79430431/113497101-44407b00-94b5-11eb-8c01-330cd0810626.png">
 
 Code Quiz Question
+
 <img width="762" alt="code quiz question" src="https://user-images.githubusercontent.com/79430431/113497113-6639fd80-94b5-11eb-85ea-a747d6d78705.png">
 
 Code Quiz Score and Initials
+
 <img width="647" alt="code quiz score initials" src="https://user-images.githubusercontent.com/79430431/113497131-98e3f600-94b5-11eb-9e36-c08b46788d2f.png">
 
 Code Quiz Highscores
+
 <img width="580" alt="code quiz highscores" src="https://user-images.githubusercontent.com/79430431/113497142-c2048680-94b5-11eb-8ccc-206e12ab746c.png">
 
 ## Important Links 
