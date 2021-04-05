@@ -111,7 +111,7 @@ input {
     color: white;
 }
 
-#choices:hover {
+.choices-button:hover {
     cursor: pointer;
     opacity: 0.4;
     transition: 0.5s;
